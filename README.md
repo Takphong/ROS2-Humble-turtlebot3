@@ -9,3 +9,27 @@ Part C (Action): A rotate_action_server rotates the robot by a set angle and pro
 All components are built within a single ROS2 package to demonstrate the practical use of topics, services, and actions.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#open gazebo(turtlebot3)
+ros2 launch midterm empty_world.launch.py
+
+
+#circle py
+ros2 run midterm circle_publisher.py
+
+#logger
+ros2 run midterm odom_logger.py
+
+
+#square server
+ros2 run midterm square_service_server.py
+
+#square client
+ros2 run midterm square_service_client.py
+
+
+#rotate action server
+ros2 run midterm rotate_action_server.py
+
+#rotate action client
+ros2 run midterm rotate_action_client.py
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
