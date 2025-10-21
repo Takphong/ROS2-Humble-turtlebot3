@@ -33,9 +33,9 @@ velocity commands (geometry_msgs/msg/Twist) to make Turtlebot3 move in a circle 
 
 Create a node name “odom_logger” that subscribes to “/odom” and prints:
 
-  • Robot’s x, y position.
+    - Robot’s x, y position.
   
-  • Robot’s orientation (yaw angle)
+    - Robot’s orientation (yaw angle)
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
