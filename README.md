@@ -27,6 +27,7 @@ ros2 launch midterm empty_world.launch.py
 
 ros2 run midterm circle_publisher.py
 
+
 #logger
 
 ros2 run midterm odom_logger.py
@@ -36,6 +37,7 @@ ros2 run midterm odom_logger.py
 
 ros2 run midterm square_service_server.py
 
+
 #square client
 
 ros2 run midterm square_service_client.py
@@ -44,6 +46,7 @@ ros2 run midterm square_service_client.py
 #rotate action server
 
 ros2 run midterm rotate_action_server.py
+
 
 #rotate action client
 
