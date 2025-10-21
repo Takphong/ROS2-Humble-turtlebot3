@@ -74,12 +74,25 @@ The server should:
 <img width="833" height="183" alt="image" src="https://github.com/user-attachments/assets/a665ad59-11ac-42af-91be-046e664c28ec" />
 
 
-• Publish feedback every 0.1 second (10 Hz).
+    • Publish feedback every 0.1 second (10 Hz).
+    • Stop and succeed when finished.
 
-• Stop and succeed when finished.
 
+• Task C2(Action Client)
+
+Create a client node “rotate_action_client” that:
+
+    • Sends a goal angle (e.g., +3.14 radians or 180 degrees)
+    • Prints feedback (remaining angle).
+    • Prints the result when done: “Goal reached successfully” or “Goal aborted”.
+
+    
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Command to run program in this file:
+-
+
 #open gazebo(turtlebot3)
 
 ros2 launch midterm empty_world.launch.py
