@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="empty_world">
+
+    <!-- A light source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Set default GUI camera pose -->
+ <gui fullscreen="0">
+  <camera name="top_down_camera">
+    <!-- Camera above world origin -->
+    <!-- X=0, Y=0, Z=5 meters up -->
+    <!-- Roll=0, Pitch=-90°, Yaw=0 -->
+    <pose>0 0 10 0 1.5708 0</pose>
+    <view_controller>orbit</view_controller>
+  </camera>
+</gui>
+
+  </world>
+</sdf>
+
