@@ -93,38 +93,36 @@ Create a client node “rotate_action_client” that:
 Command to run program in this file:
 -
 
-#open gazebo(turtlebot3)
+open gazebo(turtlebot3):
 
-ros2 launch midterm empty_world.launch.py
-
-
-#circle py
-
-ros2 run midterm circle_publisher.py
+    ros2 launch midterm empty_world.launch.py
 
 
-#logger
+Section A:
 
-ros2 run midterm odom_logger.py
+    #circle py
+    ros2 run midterm circle_publisher.py
 
-
-#square server
-
-ros2 run midterm square_service_server.py
-
-
-#square client
-
-ros2 run midterm square_service_client.py
+    #logger
+    ros2 run midterm odom_logger.py
 
 
-#rotate action server
+Section B:
 
-ros2 run midterm rotate_action_server.py
+    #square server
+    ros2 run midterm square_service_server.py
+
+    #square client
+    ros2 run midterm square_service_client.py
 
 
-#rotate action client
+Section C:
 
-ros2 run midterm rotate_action_client.py
+    #rotate action server
+    ros2 run midterm rotate_action_server.py
+
+    #rotate action client
+    ros2 run midterm rotate_action_client.py
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
