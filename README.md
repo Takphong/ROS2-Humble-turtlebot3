@@ -38,6 +38,47 @@ Create a node name “odom_logger” that subscribes to “/odom” and prints:
     - Robot’s orientation (yaw angle)
 
 
+----------------------------------------------------------------------------------------------------------
+
+
+Section B: Service
+-
+• Task B1 (Service Server)
+
+Create a service server node named “square_service_server” with service type “std_srvs/srv/Empty”.
+
+    - When called, the robot should move in a square path with 0.5 meter per side using the velocity commands.
+    - After finishing, the robot should stop
+
+• Task B2(Service Client)
+
+Create a client node “square_service_client” to call your created service.
+
+
+----------------------------------------------------------------------------------------------------------
+
+Section C: Action
+-
+• Task C1(Action Server)
+
+Create an action server node named “rotate_action_server” using a custom action definition “Rotate.action” :
+<img width="720" height="225" alt="image" src="https://github.com/user-attachments/assets/c263e208-3f54-4253-8d0a-53c144d095ab" />
+
+
+The server should:
+
+- Rotate the Turtlebot3 in place by publishing “/cmd_vel”.
+
+- Track the remaining angle of the robot for calculating the proper velocity through the simple P controller by the following concept:
+
+<img width="833" height="183" alt="image" src="https://github.com/user-attachments/assets/a665ad59-11ac-42af-91be-046e664c28ec" />
+
+
+• Publish feedback every 0.1 second (10 Hz).
+
+• Stop and succeed when finished.
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #open gazebo(turtlebot3)
 
